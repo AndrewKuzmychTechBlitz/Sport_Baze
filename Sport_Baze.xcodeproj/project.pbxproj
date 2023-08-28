@@ -8,17 +8,130 @@
 
 /* Begin PBXBuildFile section */
 		CE9D60032A8E753D0086F7AB /* Sport_BazeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60022A8E753D0086F7AB /* Sport_BazeApp.swift */; };
-		CE9D60052A8E753D0086F7AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60042A8E753D0086F7AB /* ContentView.swift */; };
 		CE9D60072A8E753E0086F7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D60062A8E753E0086F7AB /* Assets.xcassets */; };
 		CE9D600A2A8E753E0086F7AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D60092A8E753E0086F7AB /* Preview Assets.xcassets */; };
+		CE9D60122A8E757A0086F7AB /* PreloaderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60112A8E757A0086F7AB /* PreloaderScreen.swift */; };
+		CE9D60152A8E761F0086F7AB /* PilatExtended-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE9D60142A8E761F0086F7AB /* PilatExtended-Bold.ttf */; };
+		CE9D60192A8E76890086F7AB /* Color+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60182A8E76890086F7AB /* Color+Font.swift */; };
+		CE9D601B2A8E78620086F7AB /* PreloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D601A2A8E78620086F7AB /* PreloaderViewModel.swift */; };
+		CE9D601D2A8E78720086F7AB /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D601C2A8E78720086F7AB /* WebView.swift */; };
+		CE9D601F2A8E78890086F7AB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D601E2A8E78890086F7AB /* StartView.swift */; };
+		CE9D60212A8E789F0086F7AB /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60202A8E789F0086F7AB /* AnalyticsService.swift */; };
+		CE9D60242A8E7A580086F7AB /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60232A8E7A580086F7AB /* OnboardingScreen.swift */; };
+		CE9D60262A8E7E710086F7AB /* Vibration+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60252A8E7E710086F7AB /* Vibration+Notification.swift */; };
+		CE9D60282A8E8B1E0086F7AB /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60272A8E8B1E0086F7AB /* OnboardingTabView.swift */; };
+		CE9D602B2A8E8CED0086F7AB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D602A2A8E8CED0086F7AB /* Settings.swift */; };
+		CE9D602D2A8E8E470086F7AB /* TermsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D602C2A8E8E470086F7AB /* TermsScreen.swift */; };
+		CE9D602F2A8E8E970086F7AB /* PolicyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D602E2A8E8E970086F7AB /* PolicyScreen.swift */; };
+		CE9D60312A8E8EAE0086F7AB /* SavedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60302A8E8EAE0086F7AB /* SavedEvent.swift */; };
+		CE9D60342A8E93060086F7AB /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60332A8E93060086F7AB /* MainScreen.swift */; };
+		CE9D60372A8E94CF0086F7AB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D60362A8E94CF0086F7AB /* Kingfisher */; };
+		CE9D60392A8FAFC00086F7AB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60382A8FAFC00086F7AB /* MainViewModel.swift */; };
+		CE9D603C2A8FAFEB0086F7AB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D603B2A8FAFEB0086F7AB /* Alamofire */; };
+		CE9D603E2A8FAFFE0086F7AB /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D603D2A8FAFFE0086F7AB /* MainModel.swift */; };
+		CE9D60402A8FB0BF0086F7AB /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D603F2A8FB0BF0086F7AB /* DateManager.swift */; };
+		CE9D60422A8FB6D10086F7AB /* AdaptivePagingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60412A8FB6D10086F7AB /* AdaptivePagingScrollView.swift */; };
+		CE9D60452A8FCB5F0086F7AB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60442A8FCB5F0086F7AB /* MapViewModel.swift */; };
+		CE9D60472A8FCB800086F7AB /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60462A8FCB800086F7AB /* MapScreen.swift */; };
+		CE9D604A2A93A6930086F7AB /* EventDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60492A93A6930086F7AB /* EventDetailScreen.swift */; };
+		CE9D604C2A9621470086F7AB /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D604B2A9621470086F7AB /* StatisticView.swift */; };
+		CE9D604E2A96216E0086F7AB /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D604D2A96216E0086F7AB /* StandingsView.swift */; };
+		CE9D60502A9621940086F7AB /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D604F2A9621940086F7AB /* EventsView.swift */; };
+		CE9D60522A9621CF0086F7AB /* LineupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60512A9621CF0086F7AB /* LineupView.swift */; };
+		CE9D60562A9625FE0086F7AB /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60552A9625FE0086F7AB /* EventsModel.swift */; };
+		CE9D60582A9639050086F7AB /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60572A9639050086F7AB /* StatisticModel.swift */; };
+		CE9D605A2A9639150086F7AB /* StandingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60592A9639150086F7AB /* StandingsModel.swift */; };
+		CE9D605C2A9639AF0086F7AB /* LineupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D605B2A9639AF0086F7AB /* LineupModel.swift */; };
+		CE9D605E2A963A100086F7AB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D605D2A963A100086F7AB /* DetailViewModel.swift */; };
+		CE9D60612A99E1E90086F7AB /* TeamDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60602A99E1E90086F7AB /* TeamDetailScreen.swift */; };
+		CE9D60642A9C72C00086F7AB /* TeamInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60632A9C72C00086F7AB /* TeamInfoModel.swift */; };
+		CE9D60662A9C72D40086F7AB /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60652A9C72D40086F7AB /* PlayersModel.swift */; };
+		CE9D60682A9C72EE0086F7AB /* TeamStatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60672A9C72ED0086F7AB /* TeamStatModel.swift */; };
+		CE9D606A2A9C73050086F7AB /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60692A9C73050086F7AB /* TeamViewModel.swift */; };
+		CE9D606D2A9C74850086F7AB /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D606C2A9C74850086F7AB /* SDWebImageSVGCoder */; };
+		CE9D60702A9C74960086F7AB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D606F2A9C74960086F7AB /* SDWebImageSwiftUI */; };
+		CE9D60722A9C822B0086F7AB /* UserDefaultsBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60712A9C822B0086F7AB /* UserDefaultsBuffer.swift */; };
+		CE9D60742A9CAE760086F7AB /* StartTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60732A9CAE760086F7AB /* StartTabView.swift */; };
+		CE9D60772A9CB51D0086F7AB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D60762A9CB51D0086F7AB /* FirebaseAnalytics */; };
+		CE9D60792A9CB51D0086F7AB /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D60782A9CB51D0086F7AB /* FirebaseAnalyticsSwift */; };
+		CE9D607C2A9CB5EF0086F7AB /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D607B2A9CB5EF0086F7AB /* AppsFlyerLib */; };
+		CE9D60842A9CB6020086F7AB /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60832A9CB6020086F7AB /* NotificationService.swift */; };
+		CE9D60882A9CB6020086F7AB /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CE9D60812A9CB6020086F7AB /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE9D608F2A9CB6610086F7AB /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D608E2A9CB6610086F7AB /* OneSignal */; };
+		CE9D60912A9CB6610086F7AB /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D60902A9CB6610086F7AB /* OneSignalExtension */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE9D60862A9CB6020086F7AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9D5FF72A8E753D0086F7AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9D60802A9CB6020086F7AB;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE9D608C2A9CB6020086F7AB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE9D60882A9CB6020086F7AB /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE9D5FFF2A8E753D0086F7AB /* Sport_Baze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sport_Baze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D60022A8E753D0086F7AB /* Sport_BazeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport_BazeApp.swift; sourceTree = "<group>"; };
-		CE9D60042A8E753D0086F7AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE9D60062A8E753E0086F7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9D60092A8E753E0086F7AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE9D60112A8E757A0086F7AB /* PreloaderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderScreen.swift; sourceTree = "<group>"; };
+		CE9D60142A8E761F0086F7AB /* PilatExtended-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PilatExtended-Bold.ttf"; sourceTree = "<group>"; };
+		CE9D60162A8E763C0086F7AB /* Sport-Baze-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sport-Baze-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CE9D60182A8E76890086F7AB /* Color+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Font.swift"; sourceTree = "<group>"; };
+		CE9D601A2A8E78620086F7AB /* PreloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderViewModel.swift; sourceTree = "<group>"; };
+		CE9D601C2A8E78720086F7AB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CE9D601E2A8E78890086F7AB /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		CE9D60202A8E789F0086F7AB /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		CE9D60232A8E7A580086F7AB /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		CE9D60252A8E7E710086F7AB /* Vibration+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vibration+Notification.swift"; sourceTree = "<group>"; };
+		CE9D60272A8E8B1E0086F7AB /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
+		CE9D602A2A8E8CED0086F7AB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		CE9D602C2A8E8E470086F7AB /* TermsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsScreen.swift; sourceTree = "<group>"; };
+		CE9D602E2A8E8E970086F7AB /* PolicyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyScreen.swift; sourceTree = "<group>"; };
+		CE9D60302A8E8EAE0086F7AB /* SavedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedEvent.swift; sourceTree = "<group>"; };
+		CE9D60332A8E93060086F7AB /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		CE9D60382A8FAFC00086F7AB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CE9D603D2A8FAFFE0086F7AB /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		CE9D603F2A8FB0BF0086F7AB /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		CE9D60412A8FB6D10086F7AB /* AdaptivePagingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePagingScrollView.swift; sourceTree = "<group>"; };
+		CE9D60442A8FCB5F0086F7AB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		CE9D60462A8FCB800086F7AB /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		CE9D60492A93A6930086F7AB /* EventDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailScreen.swift; sourceTree = "<group>"; };
+		CE9D604B2A9621470086F7AB /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		CE9D604D2A96216E0086F7AB /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
+		CE9D604F2A9621940086F7AB /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		CE9D60512A9621CF0086F7AB /* LineupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupView.swift; sourceTree = "<group>"; };
+		CE9D60552A9625FE0086F7AB /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		CE9D60572A9639050086F7AB /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		CE9D60592A9639150086F7AB /* StandingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsModel.swift; sourceTree = "<group>"; };
+		CE9D605B2A9639AF0086F7AB /* LineupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupModel.swift; sourceTree = "<group>"; };
+		CE9D605D2A963A100086F7AB /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		CE9D60602A99E1E90086F7AB /* TeamDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailScreen.swift; sourceTree = "<group>"; };
+		CE9D60632A9C72C00086F7AB /* TeamInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoModel.swift; sourceTree = "<group>"; };
+		CE9D60652A9C72D40086F7AB /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
+		CE9D60672A9C72ED0086F7AB /* TeamStatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStatModel.swift; sourceTree = "<group>"; };
+		CE9D60692A9C73050086F7AB /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
+		CE9D60712A9C822B0086F7AB /* UserDefaultsBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBuffer.swift; sourceTree = "<group>"; };
+		CE9D60732A9CAE760086F7AB /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
+		CE9D60812A9CB6020086F7AB /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D60832A9CB6020086F7AB /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		CE9D60852A9CB6020086F7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +139,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9D607C2A9CB5EF0086F7AB /* AppsFlyerLib in Frameworks */,
+				CE9D608F2A9CB6610086F7AB /* OneSignal in Frameworks */,
+				CE9D60792A9CB51D0086F7AB /* FirebaseAnalyticsSwift in Frameworks */,
+				CE9D60702A9C74960086F7AB /* SDWebImageSwiftUI in Frameworks */,
+				CE9D606D2A9C74850086F7AB /* SDWebImageSVGCoder in Frameworks */,
+				CE9D60372A8E94CF0086F7AB /* Kingfisher in Frameworks */,
+				CE9D60772A9CB51D0086F7AB /* FirebaseAnalytics in Frameworks */,
+				CE9D603C2A8FAFEB0086F7AB /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D607E2A9CB6020086F7AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D60912A9CB6610086F7AB /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9D60012A8E753D0086F7AB /* Sport_Baze */,
+				CE9D60822A9CB6020086F7AB /* OneSignalNotificationServiceExtension */,
 				CE9D60002A8E753D0086F7AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9D5FFF2A8E753D0086F7AB /* Sport_Baze.app */,
+				CE9D60812A9CB6020086F7AB /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +182,18 @@
 		CE9D60012A8E753D0086F7AB /* Sport_Baze */ = {
 			isa = PBXGroup;
 			children = (
+				CE9D605F2A99E1D00086F7AB /* TeamDetail */,
+				CE9D60482A93A67B0086F7AB /* EventDetail */,
+				CE9D60162A8E763C0086F7AB /* Sport-Baze-Info.plist */,
+				CE9D60432A8FCB490086F7AB /* Map */,
+				CE9D60322A8E92FB0086F7AB /* Main */,
+				CE9D60292A8E8C4E0086F7AB /* Settings */,
+				CE9D60222A8E7A440086F7AB /* Onboarding */,
+				CE9D60102A8E75680086F7AB /* Preloader */,
 				CE9D60022A8E753D0086F7AB /* Sport_BazeApp.swift */,
-				CE9D60042A8E753D0086F7AB /* ContentView.swift */,
+				CE9D60732A9CAE760086F7AB /* StartTabView.swift */,
+				CE9D60172A8E76790086F7AB /* AddedFiles */,
+				CE9D60132A8E760B0086F7AB /* Font */,
 				CE9D60062A8E753E0086F7AB /* Assets.xcassets */,
 				CE9D60082A8E753E0086F7AB /* Preview Content */,
 			);
@@ -67,6 +208,139 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CE9D60102A8E75680086F7AB /* Preloader */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60112A8E757A0086F7AB /* PreloaderScreen.swift */,
+				CE9D601A2A8E78620086F7AB /* PreloaderViewModel.swift */,
+				CE9D601C2A8E78720086F7AB /* WebView.swift */,
+				CE9D601E2A8E78890086F7AB /* StartView.swift */,
+			);
+			path = Preloader;
+			sourceTree = "<group>";
+		};
+		CE9D60132A8E760B0086F7AB /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60142A8E761F0086F7AB /* PilatExtended-Bold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		CE9D60172A8E76790086F7AB /* AddedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60182A8E76890086F7AB /* Color+Font.swift */,
+				CE9D60202A8E789F0086F7AB /* AnalyticsService.swift */,
+				CE9D603F2A8FB0BF0086F7AB /* DateManager.swift */,
+				CE9D60712A9C822B0086F7AB /* UserDefaultsBuffer.swift */,
+			);
+			path = AddedFiles;
+			sourceTree = "<group>";
+		};
+		CE9D60222A8E7A440086F7AB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60232A8E7A580086F7AB /* OnboardingScreen.swift */,
+				CE9D60272A8E8B1E0086F7AB /* OnboardingTabView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CE9D60292A8E8C4E0086F7AB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D602A2A8E8CED0086F7AB /* Settings.swift */,
+				CE9D60252A8E7E710086F7AB /* Vibration+Notification.swift */,
+				CE9D602C2A8E8E470086F7AB /* TermsScreen.swift */,
+				CE9D60302A8E8EAE0086F7AB /* SavedEvent.swift */,
+				CE9D602E2A8E8E970086F7AB /* PolicyScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CE9D60322A8E92FB0086F7AB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60332A8E93060086F7AB /* MainScreen.swift */,
+				CE9D60382A8FAFC00086F7AB /* MainViewModel.swift */,
+				CE9D603D2A8FAFFE0086F7AB /* MainModel.swift */,
+				CE9D60412A8FB6D10086F7AB /* AdaptivePagingScrollView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CE9D60432A8FCB490086F7AB /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60442A8FCB5F0086F7AB /* MapViewModel.swift */,
+				CE9D60462A8FCB800086F7AB /* MapScreen.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		CE9D60482A93A67B0086F7AB /* EventDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60542A9625E60086F7AB /* Models */,
+				CE9D60532A9625D70086F7AB /* Views */,
+				CE9D605D2A963A100086F7AB /* DetailViewModel.swift */,
+			);
+			path = EventDetail;
+			sourceTree = "<group>";
+		};
+		CE9D60532A9625D70086F7AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60492A93A6930086F7AB /* EventDetailScreen.swift */,
+				CE9D60512A9621CF0086F7AB /* LineupView.swift */,
+				CE9D604B2A9621470086F7AB /* StatisticView.swift */,
+				CE9D604F2A9621940086F7AB /* EventsView.swift */,
+				CE9D604D2A96216E0086F7AB /* StandingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE9D60542A9625E60086F7AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60552A9625FE0086F7AB /* EventsModel.swift */,
+				CE9D60572A9639050086F7AB /* StatisticModel.swift */,
+				CE9D60592A9639150086F7AB /* StandingsModel.swift */,
+				CE9D605B2A9639AF0086F7AB /* LineupModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE9D605F2A99E1D00086F7AB /* TeamDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60622A9C72AA0086F7AB /* Model */,
+				CE9D60602A99E1E90086F7AB /* TeamDetailScreen.swift */,
+				CE9D60692A9C73050086F7AB /* TeamViewModel.swift */,
+			);
+			path = TeamDetail;
+			sourceTree = "<group>";
+		};
+		CE9D60622A9C72AA0086F7AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60632A9C72C00086F7AB /* TeamInfoModel.swift */,
+				CE9D60652A9C72D40086F7AB /* PlayersModel.swift */,
+				CE9D60672A9C72ED0086F7AB /* TeamStatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9D60822A9CB6020086F7AB /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D60832A9CB6020086F7AB /* NotificationService.swift */,
+				CE9D60852A9CB6020086F7AB /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +351,47 @@
 				CE9D5FFB2A8E753D0086F7AB /* Sources */,
 				CE9D5FFC2A8E753D0086F7AB /* Frameworks */,
 				CE9D5FFD2A8E753D0086F7AB /* Resources */,
+				CE9D608C2A9CB6020086F7AB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9D60872A9CB6020086F7AB /* PBXTargetDependency */,
+			);
+			name = Sport_Baze;
+			packageProductDependencies = (
+				CE9D60362A8E94CF0086F7AB /* Kingfisher */,
+				CE9D603B2A8FAFEB0086F7AB /* Alamofire */,
+				CE9D606C2A9C74850086F7AB /* SDWebImageSVGCoder */,
+				CE9D606F2A9C74960086F7AB /* SDWebImageSwiftUI */,
+				CE9D60762A9CB51D0086F7AB /* FirebaseAnalytics */,
+				CE9D60782A9CB51D0086F7AB /* FirebaseAnalyticsSwift */,
+				CE9D607B2A9CB5EF0086F7AB /* AppsFlyerLib */,
+				CE9D608E2A9CB6610086F7AB /* OneSignal */,
+			);
+			productName = Sport_Baze;
+			productReference = CE9D5FFF2A8E753D0086F7AB /* Sport_Baze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9D60802A9CB6020086F7AB /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9D60892A9CB6020086F7AB /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				CE9D607D2A9CB6020086F7AB /* Sources */,
+				CE9D607E2A9CB6020086F7AB /* Frameworks */,
+				CE9D607F2A9CB6020086F7AB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Sport_Baze;
-			productName = Sport_Baze;
-			productReference = CE9D5FFF2A8E753D0086F7AB /* Sport_Baze.app */;
-			productType = "com.apple.product-type.application";
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				CE9D60902A9CB6610086F7AB /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = CE9D60812A9CB6020086F7AB /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +406,9 @@
 					CE9D5FFE2A8E753D0086F7AB = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					CE9D60802A9CB6020086F7AB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = CE9D5FFA2A8E753D0086F7AB /* Build configuration list for PBXProject "Sport_Baze" */;
@@ -111,11 +420,21 @@
 				Base,
 			);
 			mainGroup = CE9D5FF62A8E753D0086F7AB;
+			packageReferences = (
+				CE9D60352A8E94CF0086F7AB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CE9D603A2A8FAFEB0086F7AB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE9D606B2A9C74850086F7AB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
+				CE9D606E2A9C74960086F7AB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				CE9D60752A9CB51D0086F7AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CE9D607A2A9CB5EF0086F7AB /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				CE9D608D2A9CB6610086F7AB /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
 			productRefGroup = CE9D60002A8E753D0086F7AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CE9D5FFE2A8E753D0086F7AB /* Sport_Baze */,
+				CE9D60802A9CB6020086F7AB /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +445,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9D600A2A8E753E0086F7AB /* Preview Assets.xcassets in Resources */,
+				CE9D60152A8E761F0086F7AB /* PilatExtended-Bold.ttf in Resources */,
 				CE9D60072A8E753E0086F7AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D607F2A9CB6020086F7AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +464,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9D60052A8E753D0086F7AB /* ContentView.swift in Sources */,
+				CE9D60422A8FB6D10086F7AB /* AdaptivePagingScrollView.swift in Sources */,
+				CE9D60262A8E7E710086F7AB /* Vibration+Notification.swift in Sources */,
+				CE9D60192A8E76890086F7AB /* Color+Font.swift in Sources */,
+				CE9D60472A8FCB800086F7AB /* MapScreen.swift in Sources */,
+				CE9D60562A9625FE0086F7AB /* EventsModel.swift in Sources */,
+				CE9D601D2A8E78720086F7AB /* WebView.swift in Sources */,
+				CE9D601B2A8E78620086F7AB /* PreloaderViewModel.swift in Sources */,
+				CE9D60682A9C72EE0086F7AB /* TeamStatModel.swift in Sources */,
+				CE9D60312A8E8EAE0086F7AB /* SavedEvent.swift in Sources */,
+				CE9D60582A9639050086F7AB /* StatisticModel.swift in Sources */,
+				CE9D604A2A93A6930086F7AB /* EventDetailScreen.swift in Sources */,
+				CE9D602F2A8E8E970086F7AB /* PolicyScreen.swift in Sources */,
+				CE9D60612A99E1E90086F7AB /* TeamDetailScreen.swift in Sources */,
+				CE9D601F2A8E78890086F7AB /* StartView.swift in Sources */,
+				CE9D60642A9C72C00086F7AB /* TeamInfoModel.swift in Sources */,
+				CE9D60722A9C822B0086F7AB /* UserDefaultsBuffer.swift in Sources */,
+				CE9D60402A8FB0BF0086F7AB /* DateManager.swift in Sources */,
+				CE9D605E2A963A100086F7AB /* DetailViewModel.swift in Sources */,
+				CE9D606A2A9C73050086F7AB /* TeamViewModel.swift in Sources */,
+				CE9D60522A9621CF0086F7AB /* LineupView.swift in Sources */,
+				CE9D60282A8E8B1E0086F7AB /* OnboardingTabView.swift in Sources */,
+				CE9D60242A8E7A580086F7AB /* OnboardingScreen.swift in Sources */,
+				CE9D60452A8FCB5F0086F7AB /* MapViewModel.swift in Sources */,
+				CE9D604C2A9621470086F7AB /* StatisticView.swift in Sources */,
+				CE9D60122A8E757A0086F7AB /* PreloaderScreen.swift in Sources */,
+				CE9D605A2A9639150086F7AB /* StandingsModel.swift in Sources */,
+				CE9D60502A9621940086F7AB /* EventsView.swift in Sources */,
+				CE9D60212A8E789F0086F7AB /* AnalyticsService.swift in Sources */,
+				CE9D603E2A8FAFFE0086F7AB /* MainModel.swift in Sources */,
+				CE9D60662A9C72D40086F7AB /* PlayersModel.swift in Sources */,
+				CE9D602B2A8E8CED0086F7AB /* Settings.swift in Sources */,
+				CE9D60342A8E93060086F7AB /* MainScreen.swift in Sources */,
+				CE9D604E2A96216E0086F7AB /* StandingsView.swift in Sources */,
 				CE9D60032A8E753D0086F7AB /* Sport_BazeApp.swift in Sources */,
+				CE9D602D2A8E8E470086F7AB /* TermsScreen.swift in Sources */,
+				CE9D60742A9CAE760086F7AB /* StartTabView.swift in Sources */,
+				CE9D605C2A9639AF0086F7AB /* LineupModel.swift in Sources */,
+				CE9D60392A8FAFC00086F7AB /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9D607D2A9CB6020086F7AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D60842A9CB6020086F7AB /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE9D60872A9CB6020086F7AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9D60802A9CB6020086F7AB /* OneSignalNotificationServiceExtension */;
+			targetProxy = CE9D60862A9CB6020086F7AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CE9D600B2A8E753E0086F7AB /* Debug */ = {
@@ -262,6 +641,7 @@
 		CE9D600E2A8E753E0086F7AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -270,11 +650,14 @@
 				DEVELOPMENT_TEAM = 42SA45ZPH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sport-Baze-Info.plist";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Dear user, we use your advertising IDFA to improve the quality of our service.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,15 +665,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AndrewKuzmych.Sport-Baze";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE9D600F2A8E753E0086F7AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,11 +686,14 @@
 				DEVELOPMENT_TEAM = 42SA45ZPH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sport-Baze-Info.plist";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Dear user, we use your advertising IDFA to improve the quality of our service.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +701,59 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AndrewKuzmych.Sport-Baze";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CE9D608A2A9CB6020086F7AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42SA45ZPH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AndrewKuzmych.Sport-Baze.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9D608B2A9CB6020086F7AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42SA45ZPH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AndrewKuzmych.Sport-Baze.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +781,123 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CE9D60892A9CB6020086F7AB /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9D608A2A9CB6020086F7AB /* Debug */,
+				CE9D608B2A9CB6020086F7AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE9D60352A8E94CF0086F7AB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		CE9D603A2A8FAFEB0086F7AB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CE9D606B2A9C74850086F7AB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		CE9D606E2A9C74960086F7AB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		CE9D60752A9CB51D0086F7AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		CE9D607A2A9CB5EF0086F7AB /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		CE9D608D2A9CB6610086F7AB /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE9D60362A8E94CF0086F7AB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D60352A8E94CF0086F7AB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		CE9D603B2A8FAFEB0086F7AB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D603A2A8FAFEB0086F7AB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CE9D606C2A9C74850086F7AB /* SDWebImageSVGCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D606B2A9C74850086F7AB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
+			productName = SDWebImageSVGCoder;
+		};
+		CE9D606F2A9C74960086F7AB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D606E2A9C74960086F7AB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		CE9D60762A9CB51D0086F7AB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D60752A9CB51D0086F7AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CE9D60782A9CB51D0086F7AB /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D60752A9CB51D0086F7AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		CE9D607B2A9CB5EF0086F7AB /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D607A2A9CB5EF0086F7AB /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		CE9D608E2A9CB6610086F7AB /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D608D2A9CB6610086F7AB /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		CE9D60902A9CB6610086F7AB /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D608D2A9CB6610086F7AB /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE9D5FF72A8E753D0086F7AB /* Project object */;
 }
