@@ -11,9 +11,9 @@ struct LineUpView: View{
     var array:[LineUPResponse]
     @State var index: Int = 1
     let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        GridItem(.flexible()),
+        GridItem(.fixed(109)),
+        GridItem(.fixed(109)),
+        GridItem(.fixed(109)),
     ]
     var body: some View{
         ZStack(alignment: .top){
@@ -38,17 +38,39 @@ struct LineUpView: View{
             VStack{
                 field
                 buttons
+                chooseGrid
+               
+//                switch self.index{
+//                case 1: homeTeamGrid
+//                case 2: awayTeamGrid
+//                default:
+//                    EmptyState()
+//                }
+            }
+        }
+    }
+    @ViewBuilder var chooseGrid: some View{
+        if index == 1{
+            homeTeamGrid
+        }else{
+            awayTeamGrid
+        }
+    }
+    private var homeTeamGrid: some View{
+        VStack{
+            LazyVGrid(columns: columns) {
                 
-                LazyVGrid(columns: columns) {
-                    if index == 1{
-                        ForEach(array[0].startXI!) { player in
-                            playerCell(image: "", name: player.player?.name ?? "", number: player.player?.number ?? 0, position: player.player?.pos?.title ?? "")
-                        }
-                    }else if index == 2{
-                        ForEach(array[1].startXI!) { player in
-                            playerCell(image: "", name: player.player?.name ?? "", number: player.player?.number ?? 0, position: player.player?.pos?.title ?? "")
-                        }
-                    }
+                ForEach(array[0].startXI!.indices) { i in
+                    playerCell(image: "", name: array[0].startXI![i].player?.name ?? "", number: array[0].startXI![i].player?.number ?? 0, position: array[0].startXI![i].player?.pos?.title ?? "")
+                }
+            }
+        }
+    }
+    private var awayTeamGrid: some View{
+        VStack{
+            LazyVGrid(columns: columns) {
+                ForEach(array[1].startXI!.indices) { i in
+                    playerCell(image: "", name: array[1].startXI![i].player?.name ?? "", number: array[1].startXI![i].player?.number ?? 0, position: array[1].startXI![i].player?.pos?.title ?? "")
                 }
             }
         }
@@ -93,7 +115,7 @@ struct LineUpView: View{
             Button {
                 index = 1
             } label: {
-                Text("Team-1")
+                Text("Home")
                     .opacity(index == 1 ? 1: 0.5)
                     .frame(maxWidth: .infinity)
                     .frame(height: 45)
@@ -108,7 +130,7 @@ struct LineUpView: View{
             Button {
                 index = 2
             } label: {
-                Text("Team-2")
+                Text("Away")
                     .opacity(index == 2 ? 1: 0.5)
                     .frame(maxWidth: .infinity)
                     .frame(height: 45)
@@ -131,7 +153,7 @@ struct LineUpView: View{
 //                    Circle()
 //                        .fill(Color.accentPink)
 //                })
-            Image("Rectangle 16")
+            Image("Group 88")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 70)

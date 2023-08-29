@@ -164,7 +164,7 @@ struct EventDetailScreen: View {
                 Text(DateManager.instance.convertFromStringToString(date: fixture.date ?? "", format: "dd MMMM, "))
                     .font(.system(size: 12, weight: .semibold))
                     .opacity(0.5)
-                Text(DateManager.instance.convertFromStringToString(date: fixture.date ?? "", format: "HH:MM"))
+                Text(DateManager.instance.convertFromStringToString(date: fixture.date ?? "", format: "HH:mm"))
                     .font(.system(size: 12, weight: .semibold))
             }
             dopTeamInfoLabel(label: "Location", value: fixture.venue?.name ?? "")
