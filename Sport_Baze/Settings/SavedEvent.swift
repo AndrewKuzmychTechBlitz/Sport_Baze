@@ -15,19 +15,23 @@ struct SavedEventView: View {
             NavigationView{
                 ZStack(alignment: .top){
                     Color.bg.ignoresSafeArea()
-                    VStack{
-                        header
-                        savedEventList
-                    }
-                    .foregroundColor(.white)
-                    
-                    .navigationBarBackButtonHidden(true)
-                    .onAppear{
-                        self.savedEvent = UserDefaultsBuffer.savedEvent!
+                    ScrollView(.vertical, showsIndicators: false) {
+                        
+                        VStack{
+                            header
+                            savedEventList
+                        }
+                        .foregroundColor(.white)
+                        
+                        .navigationBarBackButtonHidden(true)
+                        .onAppear{
+                            self.savedEvent = UserDefaultsBuffer.savedEvent!
+                        }
                     }
                 }
             }
             .navigationBarBackButtonHidden()
+            .navigationViewStyle(.stack)
         }
         //MARK: - Header
     private var header: some View{

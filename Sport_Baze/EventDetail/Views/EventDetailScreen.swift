@@ -28,24 +28,26 @@ struct EventDetailScreen: View {
     var body: some View {
         ZStack(alignment: .top){
             Color.detailBG.ignoresSafeArea()
-            VStack(spacing: 20){
-                header
-                teamsLabel
-                dopTeamInfo
-                selectedBar
-                previewScroll
+            ScrollView(.vertical, showsIndicators: false) {
+                
+                VStack(spacing: 20){
+                    header
+                    teamsLabel
+                    dopTeamInfo
+                    selectedBar
+                    previewScroll
+                }
+                .foregroundColor(.white)
+                .padding(.horizontal)
+                .onAppear{
+                    vm.loadEvents(fixture: fixture.id ?? 0)
+                    vm.loadStatistics(fixture: fixture.id ?? 0)
+                    vm.loadStandings(league: league.id ?? 0)
+                    vm.loadLineUp(fixture: fixture.id ?? 0)
+                    vm.savedEvent = UserDefaultsBuffer.savedEvent!
+                    vm.isEventSaved(item: SavedEvent(home: home, away: away, league: league, goal: goal, fixture: fixture))
+                }
             }
-            .foregroundColor(.white)
-            .padding(.horizontal)
-            .onAppear{
-                vm.loadEvents(fixture: fixture.id ?? 0)
-                vm.loadStatistics(fixture: fixture.id ?? 0)
-                vm.loadStandings(league: league.id ?? 0)
-                vm.loadLineUp(fixture: fixture.id ?? 0)
-                vm.savedEvent = UserDefaultsBuffer.savedEvent!
-                vm.isEventSaved(item: SavedEvent(home: home, away: away, league: league, goal: goal, fixture: fixture))
-            }
-            
         }
         .navigationBarBackButtonHidden()
         .sheet(item: $shareText) { shareText in

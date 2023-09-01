@@ -22,22 +22,25 @@ struct MainScreen: View {
     var body: some View {
         ZStack(alignment: .top){
             Color.bg.ignoresSafeArea()
-            VStack{
-                header
-//                hotEventCell(bg: orangeGR)
-//                hotEventCell(bg: blueGR)
-//                hotEventCell(bg: purpleGR)
-                if !vm.eventsArray.isEmpty && !vm.mostExpectedEvent.isEmpty{
-                    hotEventScroll
-                    allEventScroll
-                }else{
-                    EmptyState()
+            ScrollView(.vertical, showsIndicators: false) {
+                
+                VStack{
+                    header
+                    //                hotEventCell(bg: orangeGR)
+                    //                hotEventCell(bg: blueGR)
+                    //                hotEventCell(bg: purpleGR)
+                    if !vm.eventsArray.isEmpty && !vm.mostExpectedEvent.isEmpty{
+                        hotEventScroll
+                        allEventScroll
+                    }else{
+                        EmptyState()
+                    }
                 }
-            }
-            .foregroundColor(.white)
-            .onAppear{
-                array = [purpleGR, blueGR, orangeGR]
-                vm.loadAllEvent()
+                .foregroundColor(.white)
+                .onAppear{
+                    array = [purpleGR, blueGR, orangeGR]
+                    vm.loadAllEvent()
+                }
             }
         }
         .navigationBarBackButtonHidden()

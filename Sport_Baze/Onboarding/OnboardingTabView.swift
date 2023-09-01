@@ -30,6 +30,7 @@ struct OnboardingTabView: View {
         }
         .navigationBarHidden(true)
         .navigationViewStyle(.stack)
+        
     }
 }
 

@@ -12,12 +12,15 @@ struct PolicyScreen: View {
         var body: some View {
             ZStack{
                 Color.bg.ignoresSafeArea()
-                VStack{
-                    header
-                    text
+                ScrollView(.vertical, showsIndicators: false) {
+                    
+                    VStack{
+                        header
+                        text
+                    }
+                    .foregroundColor(.white)
+                    .navigationBarBackButtonHidden(true)
                 }
-                .foregroundColor(.white)
-                .navigationBarBackButtonHidden(true)
             }
         }
         //MARK: - Header

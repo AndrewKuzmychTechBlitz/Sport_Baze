@@ -12,9 +12,12 @@ struct TermsScreen: View {
         var body: some View {
             ZStack{
                 Color.bg.ignoresSafeArea()
-                VStack{
-                    header
-                    text
+                ScrollView(.vertical, showsIndicators: false) {
+                    
+                    VStack{
+                        header
+                        text
+                    }
                 }
                 .foregroundColor(.white)
 

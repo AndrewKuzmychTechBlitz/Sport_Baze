@@ -23,16 +23,18 @@ struct TeamDetailScreen: View {
     var body: some View {
         ZStack(alignment: .top) {
             Color.detailBG.ignoresSafeArea()
-            VStack{
-                if !vm.teamInformation.isEmpty{
-                    header
-                    teamInfoLabel
-                    selectedBar
-                    previewScroll
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack{
+                    if !vm.teamInformation.isEmpty{
+                        header
+                        teamInfoLabel
+                        selectedBar
+                        previewScroll
+                    }
                 }
+                .padding(.horizontal)
+                .foregroundColor(.white)
             }
-            .padding(.horizontal)
-            .foregroundColor(.white)
         }
         .onAppear{
             vm.loadTeamInformation(id: teamID)

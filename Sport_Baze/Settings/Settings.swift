@@ -18,16 +18,18 @@ struct SettingsScreen: View {
     var body: some View {
         ZStack{
             Color.bg.ignoresSafeArea()
-            VStack{
-                header
-                settingsList
-                Spacer()
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack{
+                    header
+                    settingsList
+                    Spacer()
+                }
+                .foregroundColor(.white)
+                .sheet(item: $shareText) { shareText in
+                    ActivityView(text: shareText.text)
+                }
+                .navigationBarBackButtonHidden()
             }
-            .foregroundColor(.white)
-            .sheet(item: $shareText) { shareText in
-                ActivityView(text: shareText.text)
-            }
-            .navigationBarBackButtonHidden()
         }
     }
     private var header: some View{
